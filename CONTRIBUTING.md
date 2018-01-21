@@ -6,10 +6,10 @@ Thank you for considering contribution to the Serial-Comm-Tester Project! How to
 
 It's very simple!
 
-1.Fork the project
-2.Make the changes
-3.Issue a pull request
-4.I will do a merge after verifying (in some cases changing) the code
+    1.Fork the project
+    2.Make the changes
+    3.Issue a pull request
+    4.I will do a merge after verifying (in some cases changing) the code
 
 How to report bugs?
 
