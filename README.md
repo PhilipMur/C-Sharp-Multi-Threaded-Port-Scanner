@@ -1,6 +1,10 @@
 # C-Sharp-Multi-Threaded-Port-Scanner
 C# multithreaded TCP port scanner console application.
 
+# [Download](https://goo.gl/oFJtZf)
+
+ Link to Download [HERE](https://goo.gl/oFJtZf)
+
 # Features
 
 1) Scan by I.P address or Domain Name.
