@@ -13,7 +13,7 @@ namespace MultiPortScan
 
         private string host;
         private PortList portList;
-        private bool turnOff = true;
+        private int workThread = 0;
         private int count = 0;
         public int tcpTimeout ;
 
@@ -39,7 +39,7 @@ namespace MultiPortScan
 
                 Thread thread1 = new Thread(new ThreadStart(RunScanTcp));
                 thread1.Start();
-               
+                workThread++;
             }
 
         }
@@ -106,18 +106,16 @@ namespace MultiPortScan
                 Console.ResetColor();
 
             }
-            
-              
-                if (turnOff == true )
-                {
 
-                    turnOff = false;
+
+            if (Interlocked.Decrement(ref workThread) == 0)
+            {                    
                     Console.WriteLine();
                     Console.WriteLine("Scan Complete !!!");
 
                     Console.ReadKey();
 
-                }
+            }
 
         }
     //method for returning tcp client connected or not connected
